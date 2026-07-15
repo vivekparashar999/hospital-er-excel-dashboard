@@ -1,14 +1,14 @@
-# 🏥 Hospital Emergency Room — Patient Analysis Dashboard (Excel)
+# Hospital Emergency Room — Patient Analysis Dashboard (Excel)
 
 An end-to-end Excel analytics project: **9,216 ER patient records** cleaned, modeled and visualized as a one-page **interactive dashboard** with slicer-driven KPIs.
 
 ![Dashboard](dashboard.png)
 
-**▶ Live demo (opens in Excel Online — slicers work in browser):** _link in repo description_
+**Live demo (opens in Excel Online — slicers work in browser):** _link in repo description_
 
 ---
 
-## 📊 KPIs at a Glance
+## KPIs at a Glance
 
 | KPI | Value | Definition |
 |---|---|---|
@@ -17,7 +17,7 @@ An end-to-end Excel analytics project: **9,216 ER patient records** cleaned, mod
 | Satisfaction Score | **4.9 / 10** | average of rated visits |
 | Seen Within 30 min | **40.6%** | wait-time SLA compliance |
 
-## 🔍 Key Insights
+## Key Insights
 
 1. **Wait-time SLA is failing** — 59% of patients wait beyond the 30-minute target (avg 35.1 min) → triage fast-track recommended.
 2. **~58% of visits require no departmental referral** — minor cases dominate; prime candidates for a GP-style fast lane.
@@ -25,7 +25,7 @@ An end-to-end Excel analytics project: **9,216 ER patient records** cleaned, mod
 4. **Volume is flat (~440–550/month)** with no seasonality → stable staffing baseline.
 5. **Demographics are balanced** across age bands and gender — no single cohort drives load.
 
-## 🛠️ How It's Built
+## How It's Built
 
 ```
 Raw_Data (messy)  →  Cleaning (16 formula columns → Excel Table)
@@ -43,13 +43,13 @@ Raw_Data (messy)  →  Cleaning (16 formula columns → Excel Table)
 
 **Excel features used:** Excel Tables · PivotTables (shared cache) · PivotCharts · Slicers + Report Connections · `GETPIVOTDATA` · `TEXT` / `FLOOR` / nested `IF-OR` · linked text boxes · custom-list month sorting · dark dashboard design.
 
-## 🚀 Use It
+## Use It
 
 1. Download [`Hospital_ER_Dashboard.xlsx`](Hospital_ER_Dashboard.xlsx) and open in Excel (desktop or web).
 2. Go to the **Dashboard** sheet → click any slicer → all KPIs and charts update together.
 3. Add new rows to `Raw_Data` → **Data ▸ Refresh All** re-runs the entire pipeline.
 
-## 📁 Files
+## Files
 
 - `Hospital_ER_Dashboard.xlsx` — the interactive workbook
 - `Hospital_ER_Data.csv` — raw dataset
